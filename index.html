@@ -3,49 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <title>To2Rent</title>
-  <link rel="stylesheet" href="./css/normalize.css">
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Roboto+Condensed&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/slick.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
+
 <!--H E A D E R-->
 <header class="header">
-<!-- logo -->
+  <!-- logo -->
   <div class="logo header__logo">
     <a class="logo__link" href="#">
-    <img class="logo__link-img" src="./assets/logo.svg" alt="Logo To2Rent">
+      <img class="logo__link-img" src="./assets/logo.svg" alt="Logo To2Rent">
     </a>
   </div>
-<!-- menu -->
+  <!-- menu -->
   <nav class="menu">
-  <ul class="menu__list">
-    <li class="menu__list-item">
-      <a class="menu__list-link menu__list-link--active" href="#">About us</a>
-    </li>
-    <li class="menu__list-item">
-      <a class="menu__list-link" href="#">Houses</a>
-    </li>
-    <li class="menu__list-item">
-      <a class="menu__list-link" href="#">Apartments</a>
-    </li>
-    <li class="menu__list-item">
-      <a class="menu__list-link" href="#">Contacts</a>
-    </li>
-  </ul>
+    <ul class="menu__list">
+      <li class="menu__list-item">
+        <a class="menu__list-link menu__list-link--active" href="#">About us</a>
+      </li>
+      <li class="menu__list-item">
+        <a class="menu__list-link" href="#">Houses</a>
+      </li>
+      <li class="menu__list-item">
+        <a class="menu__list-link" href="#">Apartments</a>
+      </li>
+      <li class="menu__list-item">
+        <a class="menu__list-link" href="#">Contacts</a>
+      </li>
+    </ul>
   </nav>
-  <div class="header__slider">
-    <img src="" alt="Image" class="header__slider-image">
-  </div>
-  <div class="form-block">
-    <div class="form_title">Search for apartments</div>
-    <form class="form" action="#">
-      <input class="input" type="text" placeholder="Enter a city">
-      <button class="button">Search</button>
+</header>
+
+<!-- S L I D E R -->
+<section class="slider">
+  <div class="slider__item" style="background-image: url(assets/slider-item1.jpg)"></div>
+  <div class="slider__item" style="background-image: url(assets/slider-item2.jpg)"></div>
+  <div class="slider__item" style="background-image: url(assets/slider-item3.jpg)"></div>
+</section>
+
+<!-- S E A R C H -->
+<section class="search">
+  <div class="search__inner">
+    <form class="search__form">
+      <label class="search__form-label">Search for Apartments</label>
+      <input class="search__form-input" type="text" placeholder="Enter a city">
+      <button class="search__form-btn" type="submit">Search</button>
     </form>
   </div>
-</header>
+</section>
+
 
 <!--M A I N -->
 <main class="content">
@@ -200,6 +210,8 @@
     <img class="logo" src="" alt="Logo To2Rent">
   </div>
 </footer>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="./js/slick.min.js"></script>
+<script src="./js/main.js"></script>
 </body>
 </html>
