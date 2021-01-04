@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000;
+}
+
+.header {
+  text-align: center;
+}
+.header .header__logo {
+  padding-top: 88px;
+  padding-bottom: 60px;
+}
+.header .menu {
+  border-top: 2px solid #C4C4C4;
+}
+.header .menu .menu__list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+.header .menu .menu__list .menu__list-item {
+  width: 300px;
+}
+.header .menu .menu__list .menu__list-item:first-child {
+  border-left: 1px solid #c4c4c4;
+}
+.header .menu .menu__list .menu__list-item:last-child {
+  border-right: 1px solid #c4c4c4;
+}
+.header .menu .menu__list .menu__list-item .menu__list-link {
+  display: block;
+  padding: 35px 10px 38px;
+  font-size: 24px;
+  line-height: 28px;
+  color: #888888;
+  text-decoration: none;
+  border-left: 1px solid #c4c4c4;
+  border-right: 1px solid #c4c4c4;
+  transition: all .3s;
+}
+.header .menu .menu__list .menu__list-item .menu__list-link:hover {
+  background-color: #000;
+  color: #fff;
+}
+.header .menu .menu__list .menu__list-item .menu__list-link--active {
+  background-color: #000;
+  color: #fff;
+}
