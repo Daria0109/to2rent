@@ -293,6 +293,37 @@ body {
   font-weight: 400;
 }
 
+.trends {
+  background-color: #e8e8e8;
+}
+.trends .container {
+  max-width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
+  padding: 30px 15px;
+}
+.trends .container .trends__inner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 250px;
+  grid-gap: 20px;
+}
+.trends .container .trends__inner .trends__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.trends .container .trends__inner .trends__title {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  line-height: 48px;
+  color: #4c4a4a;
+  font-weight: 400;
+}
+
 .about {
   background-color: #000000;
 }

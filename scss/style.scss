@@ -325,6 +325,34 @@ body {
   }
 }
 
+// T R E N D S
+.trends {
+  background-color: #e8e8e8;
+  .container {
+    @include container();
+      padding: 30px 15px;
+      .trends__inner {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 250px;
+        grid-gap: 20px;
+        .trends__img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+        .trends__title {
+          background-color: #ffffff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          @include font(48px, 48px, #4c4a4a, 500);
+        }
+      }
+    }
+  }
+
+
 
 // A B O U T
 .about {
