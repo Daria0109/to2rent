@@ -125,3 +125,135 @@ body {
   top: 26px;
   left: 9px;
 }
+
+.popular .popular__title {
+  padding: 18px;
+  background: #000000;
+  font-family: 'PT Serif', serif;
+  font-size: 48px;
+  line-height: 64px;
+  color: #FFFFFF;
+  text-align: center;
+  font-weight: 400;
+}
+.popular .container {
+  max-width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.popular .container .popular__inner {
+  padding: 100px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.popular .container .popular__inner .popular__item {
+  text-align: center;
+}
+.popular .container .popular__inner .popular__item .popular__img {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.popular .container .popular__inner .popular__item .popular__item-title {
+  padding: 30px 15px;
+  font-size: 24px;
+  color: #888888;
+  font-weight: 400;
+}
+.popular .container .popular__inner .popular__item .popular__link {
+  background-color: #C4C4C4;
+  text-decoration: none;
+  padding: 13px 48px;
+  color: #fff;
+}
+
+.reason .container {
+  max-width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.reason .container .reason__inner {
+  padding: 100px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.reason .container .reason__inner .reason__item {
+  width: 470px;
+}
+.reason .container .reason__inner .reason__item .reason__title {
+  font-family: 'PT Serif', serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: #000000;
+  padding-left: 136px;
+  margin-bottom: 30px;
+  position: relative;
+}
+.reason .container .reason__inner .reason__item .reason__title::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 103px;
+  height: 103px;
+}
+.reason .container .reason__inner .reason__item .reason__title--icon-1::before {
+  background-image: url(../assets/reason/time-icon.png);
+}
+.reason .container .reason__inner .reason__item .reason__title--icon-2::before {
+  background-image: url(../assets/reason/world-icon.png);
+}
+.reason .container .reason__inner .reason__item .reason__text {
+  margin-bottom: 40px;
+}
+.reason .container .reason__inner .reason__item .reason__link {
+  color: #888888;
+  padding-left: 36px;
+  position: relative;
+}
+.reason .container .reason__inner .reason__item .reason__link::before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  background-image: url(../assets/reason/arrow-black.svg);
+}
+
+.best {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  text-align: right;
+}
+.best .container {
+  max-width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.best .container .best__title {
+  max-width: 492px;
+  padding-top: 68px;
+  margin-bottom: 15px;
+  margin-left: auto;
+  font-family: 'PT Serif', serif;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 48px;
+  color: #FFFFFF;
+}
+.best .container .best__link {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  line-height: 18px;
+  color: #FFFFFF;
+  background-color: #020202;
+  padding: 16px 18px;
+}
