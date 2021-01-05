@@ -193,37 +193,51 @@
 
 <!-- F O O T E R -->
 <footer class="footer">
-
-  <div class="footer__nav">
-    <ul class="menu">
-      <li class="menu-item">
-        <a href="#" class="menu-link">About us</a>
-      </li>
-      <li class="menu-item">
-        <a href="#" class="menu-link">Houses</a>
-      </li>
-      <li class="menu-item">
-        <a href="#" class="menu-link">Apartments</a>
-      </li>
-      <li class="menu-item">
-        <a href="#" class="menu-link">Reviews</a>
-      </li>
-      <li class="menu-item">
-        <a href="#" class="menu-link">Contacts</a>
-      </li>
-    </ul>
-    <div class="form-block">
-      <div class="form_title">Contact us</div>
-      <form class="form" action="#">
-        <input class="input" type="text" placeholder="Ask question">
-        <button class="button">Send</button>
-      </form>
+<div class="container">
+  <div class="footer__top">
+<!--Footer-top-->
+    <div class="footer__nav">
+      <ul class="footer__menu">
+        <li class="footer__menu-item">
+          <a class="footer__menu-link" href="#">About us</a>
+        </li>
+        <li class="footer__menu-item">
+          <a class="footer__menu-link" href="#">Houses</a>
+        </li>
+        <li class="footer__menu-item">
+          <a class="footer__menu-link" href="#">Apartments</a>
+        </li>
+        <li class="footer__menu-item">
+          <a class="footer__menu-link" href="#">Reviews</a>
+        </li>
+        <li class="footer__menu-item">
+          <a class="footer__menu-link" href="#">Contacts</a>
+        </li>
+      </ul>
+      <ul class="footer__social">
+        <li class="footer__social-item">
+          <a class="footer__social-link facebook" href="#">Facebook</a>
+        </li>
+        <li class="footer__social-item">
+          <a class="footer__social-link instagram" href="#">Instagram</a>
+        </li>
+        <li class="footer__social-item">
+          <a class="footer__social-link twitter" href="#">Twitter</a>
+        </li>
+      </ul>
+        <form class="footer__form">
+          <label class="footer__form-label">Contact us</label>
+          <input class="footer__form-input" type="text" placeholder="Ask question">
+          <button class="footer__form-btn" type="submit">Send</button>
+        </form>
     </div>
   </div>
-
-
-  <div class="footer__bottom">
-    <img class="logo" src="" alt="Logo To2Rent">
+</div>
+<!--Footer-bottom-->
+  <div class="logo footer__logo">
+    <a class="logo__link" href="#">
+      <img class="logo__link-img footer__logo-img" src="./assets/logo.svg" alt="Logo To2Rent">
+    </a>
   </div>
 </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
