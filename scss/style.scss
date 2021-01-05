@@ -1,20 +1,36 @@
+$mainFont: 'Roboto Condensed', sans-serif;
+$titleFont: 'PT Serif', serif;
+
+@mixin container() {
+  max-width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+@mixin innerBlock(){
+  padding: 100px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin font($fontSize, $lineHeight, $fontColor, $fontWeight) {
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  color: $fontColor;
+  font-weight: 400;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-
 body {
-  font-family: 'Roboto Condensed', sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
-  color: #000;
+  font-family: $mainFont;
 }
 
-//font-family: 'PT Serif', serif;
-//font-family: 'Roboto Condensed', sans-serif;
 
 // H E A D E R
 .header {
@@ -47,9 +63,7 @@ body {
         .menu__list-link {
           display: block;
           padding: 35px 10px 38px;
-          font-size: 24px;
-          line-height: 28px;
-          color: #888888;
+          @include font(24px, 28px, #888888, 400);
           text-decoration: none;
           border-left: 1px solid #c4c4c4;
           border-right: 1px solid #c4c4c4;
@@ -111,8 +125,7 @@ body {
 
       .search__form-label {
         max-width: 156px;
-        font-size: 24px;
-        color: #888888;
+        @include font(24px, 24px, #888888, 400);
         margin-right: 39px;
       }
     }
@@ -125,10 +138,8 @@ body {
       border: 2px solid #C4C4C4;
 
       &::placeholder {
-        font-family: 'Roboto Condensed', sans-serif;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 24px;
+        font-family: $mainFont;
+        @include font(18px, 24px, #888888, 400);
       }
     }
 
@@ -136,8 +147,7 @@ body {
       padding: 21px;
       padding-left: 36px;
       height: 70px;
-      font-size: 24px;
-      color: #FFFFFF;
+      @include font(24px, 24px, #FFFFFF, 400);
       background: #C4C4C4;
       border: none;
       cursor: pointer;
@@ -161,24 +171,16 @@ body {
   .popular__title {
     padding: 18px;
     background: #000000;
-    font-family: 'PT Serif', serif;
-    font-size: 48px;
-    line-height: 64px;
-    color: #FFFFFF;
+    font-family: $titleFont;
+    @include font(48px, 64px, #FFFFFF, 400);
     text-align: center;
-    font-weight: 400;
   }
 
   .container {
-    max-width: 1230px;
-    padding: 0 15px;
-    margin: 0 auto;
+    @include container();
 
     .popular__inner {
-      padding: 100px 0;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      @include innerBlock();
 
       .popular__item {
         text-align: center;
@@ -192,9 +194,7 @@ body {
 
         .popular__item-title {
           padding: 30px 15px;
-          font-size: 24px;
-          color: #888888;
-          font-weight: 400;
+          @include font(24px, 24px, #888888, 400);
         }
 
         .popular__link {
@@ -211,25 +211,17 @@ body {
 // R E A S O N
 .reason {
   .container {
-    max-width: 1230px;
-    padding: 0 15px;
-    margin: 0 auto;
+    @include container();
 
     .reason__inner {
-      padding: 100px 0;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      @include innerBlock();
 
       .reason__item {
         width: 470px;
 
         .reason__title {
-          font-family: 'PT Serif', serif;
-          font-weight: 400;
-          font-size: 36px;
-          line-height: 36px;
-          color: #000000;
+          font-family: $titleFont;
+          @include font(36px, 36px, #000000, 400);
           padding-left: 136px;
           margin-bottom: 30px;
           position: relative;
@@ -285,28 +277,22 @@ body {
   text-align: right;
 
   .container {
-    max-width: 1230px;
-    padding: 0 15px;
-    margin: 0 auto;
+    @include container();
 
     .best__title {
       max-width: 492px;
       padding-top: 68px;
       margin-bottom: 15px;
       margin-left: auto;
-      font-family: 'PT Serif', serif;
-      font-weight: 400;
-      font-size: 48px;
-      line-height: 48px;
-      color: #FFFFFF;
+      font-family: $titleFont;
+      @include font(48px, 48px, #FFFFFF, 400);
     }
 
     .best__link {
       display: inline-block;
       text-align: center;
       text-decoration: none;
-      line-height: 18px;
-      color: #FFFFFF;
+      @include font(18px, 18px, #FFFFFF, 400);
       background-color: #020202;
       padding: 16px 18px;
     }
@@ -318,25 +304,17 @@ body {
   background-color: #000000;
 
   .container {
-    max-width: 1230px;
-    padding: 0 15px;
-    margin: 0 auto;
+    @include container();
 
     .about__inner {
-      padding: 100px 0;
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
+      @include innerBlock();
 
       .staff {
         width: 300px;
         .about__title {
-          font-family: 'PT Serif', serif;
-          font-weight: 400;
-          font-size: 48px;
-          line-height: 48px;
+          font-family: $titleFont;
+          @include font(48px, 48px, #FFFFFF, 400);
           text-align: center;
-          color: #FFFFFF;
           margin-bottom: 47px;
         }
         .staff__title {
@@ -361,8 +339,7 @@ body {
 
             .staff__info {
               list-style: none;
-              line-height: 21px;
-              color: #FFFFFF;
+              @include font(18px, 21px, #FFFFFF, 400);
               margin-bottom: 43px;
             }
 
@@ -370,8 +347,7 @@ body {
               padding: 16px 21px;
               border: none;
               background-color: #fff;
-              line-height: 18px;
-              color: #000000;
+              @include font(18px, 18px, #000000, 400);
               cursor: pointer;
             }
           }
@@ -382,12 +358,9 @@ body {
         width: 412px;
 
         .about__title {
-          font-family: 'PT Serif', serif;
-          font-weight: 400;
-          font-size: 48px;
-          line-height: 48px;
+          font-family: $titleFont;
+          @include font(48px, 48px, #ffffff, 400);
           text-align: center;
-          color: #ffffff;
           margin-bottom: 47px;
         }
 
@@ -397,9 +370,8 @@ body {
           .blog__item {
             .blog__link {
               display: inline-block;
-              color: #ffffff;
+              @include font(18px, 18px, #ffffff, 400);
               text-decoration: none;
-              line-height: 18px;
               padding-left: 67px;
               margin-bottom: 28px;
               position: relative;
@@ -422,12 +394,9 @@ body {
       .reviews {
         width: 300px;
         .about__title {
-          font-family: 'PT Serif', serif;
-          font-weight: 400;
-          font-size: 48px;
-          line-height: 48px;
+          font-family: $titleFont;
+          @include font(48px, 48px, #ffffff, 400);
           text-align: center;
-          color: #ffffff;
           margin-bottom: 47px;
         }
         .reviews__img {
@@ -435,8 +404,7 @@ body {
           margin-bottom: 22px;
         }
         .reviews__text {
-          line-height: 21px;
-          color: #FFFFFF;
+          @include font(18px, 21px, #ffffff, 400);
           text-align: left;
           margin-bottom: 22px;
         }
@@ -445,8 +413,7 @@ body {
           text-decoration: none;
           padding: 16px 21px;
           background-color: #fff;
-          line-height: 18px;
-          color: #000000;
+          @include font(18px, 18px, #000000, 400);
           cursor: pointer;
         }
       }
@@ -458,9 +425,7 @@ body {
 .footer {
   background-color: #000000;
   .container {
-    max-width: 1230px;
-    padding: 0 15px;
-    margin: 0 auto;
+    @include container();
     .footer__top {
       padding: 100px 0;
       .footer__nav {
@@ -474,9 +439,7 @@ body {
 
           .footer__menu-link {
             text-decoration: none;
-            font-size: 24px;
-            line-height: 36px;
-            color: #FFFFFF;
+            @include font(24px, 36px, #FFFFFF, 400);
           }
         }
           .footer__social {
@@ -486,9 +449,7 @@ body {
               display: inline-block;
               padding-left: 45px;
               text-decoration: none;
-              font-size: 24px;
-              line-height: 36px;
-              color: #FFFFFF;
+              @include font(24px, 36px, #FFFFFF, 400);
               position: relative;
 
               &::before {
@@ -522,9 +483,8 @@ body {
 
           .footer__form-label {
             max-width: 156px;
-            color: #888888;
+            @include font(24px, 24px, #888888, 400);
             margin-right: 10px;
-            font-size: 24px;
           }
         }
 
@@ -536,18 +496,15 @@ body {
           border: none;
 
           &::placeholder {
-            font-family: 'Roboto Condensed', sans-serif;
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 24px;
+            font-family: $mainFont;
+            @include font(18px, 24px, #888888, 400);
           }
         }
 
         .footer__form-btn {
           padding: 0 25px;
           height: 70px;
-          font-size: 24px;
-          color: #FFFFFF;
+          @include font(24px, 24px, #FFFFFF, 400);
           background: #C4C4C4;
           border: none;
           cursor: pointer;

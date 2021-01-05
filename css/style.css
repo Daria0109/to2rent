@@ -5,11 +5,7 @@
 }
 
 body {
-  font-family: 'Roboto Condensed', sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
-  color: #000;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 .header {
@@ -42,6 +38,7 @@ body {
   font-size: 24px;
   line-height: 28px;
   color: #888888;
+  font-weight: 400;
   text-decoration: none;
   border-left: 1px solid #c4c4c4;
   border-right: 1px solid #c4c4c4;
@@ -90,7 +87,9 @@ body {
 .search .search__inner .search__form .search__form-label {
   max-width: 156px;
   font-size: 24px;
+  line-height: 24px;
   color: #888888;
+  font-weight: 400;
   margin-right: 39px;
 }
 .search .search__inner .search__form-input {
@@ -101,17 +100,20 @@ body {
   border: 2px solid #C4C4C4;
 }
 .search .search__inner .search__form-input::placeholder {
-  font-family: 'Roboto Condensed', sans-serif;
-  font-weight: 400;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 18px;
   line-height: 24px;
+  color: #888888;
+  font-weight: 400;
 }
 .search .search__inner .search__form-btn {
   padding: 21px;
   padding-left: 36px;
   height: 70px;
   font-size: 24px;
+  line-height: 24px;
   color: #FFFFFF;
+  font-weight: 400;
   background: #C4C4C4;
   border: none;
   cursor: pointer;
@@ -130,12 +132,12 @@ body {
 .popular .popular__title {
   padding: 18px;
   background: #000000;
-  font-family: 'PT Serif', serif;
+  font-family: "PT Serif", serif;
   font-size: 48px;
   line-height: 64px;
   color: #FFFFFF;
-  text-align: center;
   font-weight: 400;
+  text-align: center;
 }
 .popular .container {
   max-width: 1230px;
@@ -160,6 +162,7 @@ body {
 .popular .container .popular__inner .popular__item .popular__item-title {
   padding: 30px 15px;
   font-size: 24px;
+  line-height: 24px;
   color: #888888;
   font-weight: 400;
 }
@@ -185,11 +188,11 @@ body {
   width: 470px;
 }
 .reason .container .reason__inner .reason__item .reason__title {
-  font-family: 'PT Serif', serif;
-  font-weight: 400;
+  font-family: "PT Serif", serif;
   font-size: 36px;
   line-height: 36px;
   color: #000000;
+  font-weight: 400;
   padding-left: 136px;
   margin-bottom: 30px;
   position: relative;
@@ -243,18 +246,20 @@ body {
   padding-top: 68px;
   margin-bottom: 15px;
   margin-left: auto;
-  font-family: 'PT Serif', serif;
-  font-weight: 400;
+  font-family: "PT Serif", serif;
   font-size: 48px;
   line-height: 48px;
   color: #FFFFFF;
+  font-weight: 400;
 }
 .best .container .best__link {
   display: inline-block;
   text-align: center;
   text-decoration: none;
+  font-size: 18px;
   line-height: 18px;
   color: #FFFFFF;
+  font-weight: 400;
   background-color: #020202;
   padding: 16px 18px;
 }
@@ -270,19 +275,19 @@ body {
 .about .container .about__inner {
   padding: 100px 0;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
 }
 .about .container .about__inner .staff {
   width: 300px;
 }
 .about .container .about__inner .staff .about__title {
-  font-family: 'PT Serif', serif;
-  font-weight: 400;
+  font-family: "PT Serif", serif;
   font-size: 48px;
   line-height: 48px;
-  text-align: center;
   color: #FFFFFF;
+  font-weight: 400;
+  text-align: center;
   margin-bottom: 47px;
 }
 .about .container .about__inner .staff .staff__title {
@@ -305,28 +310,32 @@ body {
 }
 .about .container .about__inner .staff .staff__items .staff__item .staff__info {
   list-style: none;
+  font-size: 18px;
   line-height: 21px;
   color: #FFFFFF;
+  font-weight: 400;
   margin-bottom: 43px;
 }
 .about .container .about__inner .staff .staff__items .staff__item .staff__btn {
   padding: 16px 21px;
   border: none;
   background-color: #fff;
+  font-size: 18px;
   line-height: 18px;
   color: #000000;
+  font-weight: 400;
   cursor: pointer;
 }
 .about .container .about__inner .blog {
   width: 412px;
 }
 .about .container .about__inner .blog .about__title {
-  font-family: 'PT Serif', serif;
-  font-weight: 400;
+  font-family: "PT Serif", serif;
   font-size: 48px;
   line-height: 48px;
-  text-align: center;
   color: #ffffff;
+  font-weight: 400;
+  text-align: center;
   margin-bottom: 47px;
 }
 .about .container .about__inner .blog .blog__list {
@@ -334,9 +343,11 @@ body {
 }
 .about .container .about__inner .blog .blog__list .blog__item .blog__link {
   display: inline-block;
-  color: #ffffff;
-  text-decoration: none;
+  font-size: 18px;
   line-height: 18px;
+  color: #ffffff;
+  font-weight: 400;
+  text-decoration: none;
   padding-left: 67px;
   margin-bottom: 28px;
   position: relative;
@@ -354,12 +365,12 @@ body {
   width: 300px;
 }
 .about .container .about__inner .reviews .about__title {
-  font-family: 'PT Serif', serif;
-  font-weight: 400;
+  font-family: "PT Serif", serif;
   font-size: 48px;
   line-height: 48px;
-  text-align: center;
   color: #ffffff;
+  font-weight: 400;
+  text-align: center;
   margin-bottom: 47px;
 }
 .about .container .about__inner .reviews .reviews__img {
@@ -367,8 +378,10 @@ body {
   margin-bottom: 22px;
 }
 .about .container .about__inner .reviews .reviews__text {
+  font-size: 18px;
   line-height: 21px;
-  color: #FFFFFF;
+  color: #ffffff;
+  font-weight: 400;
   text-align: left;
   margin-bottom: 22px;
 }
@@ -377,8 +390,10 @@ body {
   text-decoration: none;
   padding: 16px 21px;
   background-color: #fff;
+  font-size: 18px;
   line-height: 18px;
   color: #000000;
+  font-weight: 400;
   cursor: pointer;
 }
 
@@ -408,6 +423,7 @@ body {
   font-size: 24px;
   line-height: 36px;
   color: #FFFFFF;
+  font-weight: 400;
 }
 .footer .container .footer__top .footer__nav .footer__social {
   width: 250px;
@@ -420,6 +436,7 @@ body {
   font-size: 24px;
   line-height: 36px;
   color: #FFFFFF;
+  font-weight: 400;
   position: relative;
 }
 .footer .container .footer__top .footer__nav .footer__social .footer__social-link::before {
@@ -448,9 +465,11 @@ body {
 }
 .footer .container .footer__top .footer__form .footer__form-label {
   max-width: 156px;
-  color: #888888;
-  margin-right: 10px;
   font-size: 24px;
+  line-height: 24px;
+  color: #888888;
+  font-weight: 400;
+  margin-right: 10px;
 }
 .footer .container .footer__top .footer__form-input {
   display: block;
@@ -460,16 +479,19 @@ body {
   border: none;
 }
 .footer .container .footer__top .footer__form-input::placeholder {
-  font-family: 'Roboto Condensed', sans-serif;
-  font-weight: 400;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 18px;
   line-height: 24px;
+  color: #888888;
+  font-weight: 400;
 }
 .footer .container .footer__top .footer__form-btn {
   padding: 0 25px;
   height: 70px;
   font-size: 24px;
+  line-height: 24px;
   color: #FFFFFF;
+  font-weight: 400;
   background: #C4C4C4;
   border: none;
   cursor: pointer;
