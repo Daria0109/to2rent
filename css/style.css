@@ -264,6 +264,35 @@ body {
   padding: 16px 18px;
 }
 
+.statistics .container {
+  max-width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.statistics .container .statistics__inner {
+  padding: 100px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.statistics .container .statistics__inner .statistics__item .statistics__img {
+  width: 200px;
+  margin-bottom: 15px;
+}
+.statistics .container .statistics__inner .statistics__item .statistics__text {
+  text-align: center;
+  font-size: 28px;
+  line-height: 28px;
+  color: #4c4a4a;
+  font-weight: 400;
+}
+.statistics .container .statistics__inner .statistics__item .statistics__text .statistics__count {
+  font-size: 48px;
+  line-height: 48px;
+  color: #4c4a4a;
+  font-weight: 400;
+}
+
 .about {
   background-color: #000000;
 }

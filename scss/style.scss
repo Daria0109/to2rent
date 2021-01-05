@@ -7,7 +7,7 @@ $titleFont: 'PT Serif', serif;
   margin: 0 auto;
 }
 
-@mixin innerBlock(){
+@mixin innerBlock() {
   padding: 100px 0;
   display: flex;
   align-items: center;
@@ -299,6 +299,33 @@ body {
   }
 }
 
+// S T A T I S T I C S
+.statistics {
+  .container {
+    @include container();
+
+    .statistics__inner {
+      @include innerBlock();
+
+      .statistics__item {
+        .statistics__img {
+          width: 200px;
+          margin-bottom: 15px;
+        }
+        .statistics__text {
+          text-align: center;
+          @include font(28px, 28px, #4c4a4a, 400);
+          .statistics__count {
+            @include font(48px, 48px, #4c4a4a, 500);
+          }
+        }
+      }
+
+    }
+  }
+}
+
+
 // A B O U T
 .about {
   background-color: #000000;
@@ -311,12 +338,14 @@ body {
 
       .staff {
         width: 300px;
+
         .about__title {
           font-family: $titleFont;
           @include font(48px, 48px, #FFFFFF, 400);
           text-align: center;
           margin-bottom: 47px;
         }
+
         .staff__title {
           margin-bottom: 27px;
         }
@@ -375,6 +404,7 @@ body {
               padding-left: 67px;
               margin-bottom: 28px;
               position: relative;
+
               &::before {
                 content: '';
                 position: absolute;
@@ -393,21 +423,25 @@ body {
 
       .reviews {
         width: 300px;
+
         .about__title {
           font-family: $titleFont;
           @include font(48px, 48px, #ffffff, 400);
           text-align: center;
           margin-bottom: 47px;
         }
+
         .reviews__img {
           width: 100%;
           margin-bottom: 22px;
         }
+
         .reviews__text {
           @include font(18px, 21px, #ffffff, 400);
           text-align: left;
           margin-bottom: 22px;
         }
+
         .reviews__link {
           display: inline-block;
           text-decoration: none;
@@ -424,14 +458,18 @@ body {
 //F O O T E R
 .footer {
   background-color: #000000;
+
   .container {
     @include container();
+
     .footer__top {
       padding: 100px 0;
+
       .footer__nav {
         display: flex;
         align-items: center;
         justify-content: space-between;
+
         .footer__menu {
           list-style: none;
           color: #ffffff;
@@ -442,82 +480,88 @@ body {
             @include font(24px, 36px, #FFFFFF, 400);
           }
         }
-          .footer__social {
-            width: 250px;
-            margin-right: 50px;
-            .footer__social-link {
-              display: inline-block;
-              padding-left: 45px;
-              text-decoration: none;
-              @include font(24px, 36px, #FFFFFF, 400);
-              position: relative;
 
-              &::before {
-                content: '';
-                position: absolute;
-                width: 30px;
-                height: 30px;
-                top: 3px;
-                left: 0;
-                background-repeat: no-repeat;
-                background-size: contain;
-              }
-            }
-              .facebook::before {
-                background-image: url(../assets/footer/facebook.svg);
-              }
-              .instagram::before {
-                background-image: url(../assets/footer/instagram.svg);
-              }
-              .twitter::before {
-                background-image: url(../assets/footer/twitter.svg);
-              }
+        .footer__social {
+          width: 250px;
+          margin-right: 50px;
+
+          .footer__social-link {
+            display: inline-block;
+            padding-left: 45px;
+            text-decoration: none;
+            @include font(24px, 36px, #FFFFFF, 400);
+            position: relative;
+
+            &::before {
+              content: '';
+              position: absolute;
+              width: 30px;
+              height: 30px;
+              top: 3px;
+              left: 0;
+              background-repeat: no-repeat;
+              background-size: contain;
             }
           }
 
+          .facebook::before {
+            background-image: url(../assets/footer/facebook.svg);
+          }
 
-        .footer__form {
-          display: flex;
-          justify-content: center;
-          align-items: center;
+          .instagram::before {
+            background-image: url(../assets/footer/instagram.svg);
+          }
 
-          .footer__form-label {
-            max-width: 156px;
-            @include font(24px, 24px, #888888, 400);
-            margin-right: 10px;
+          .twitter::before {
+            background-image: url(../assets/footer/twitter.svg);
           }
         }
+      }
 
-        .footer__form-input {
-          display: block;
-          width: 511px;
-          height: 70px;
-          padding: 0 15px;
-          border: none;
 
-          &::placeholder {
-            font-family: $mainFont;
-            @include font(18px, 24px, #888888, 400);
-          }
+      .footer__form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .footer__form-label {
+          max-width: 156px;
+          @include font(24px, 24px, #888888, 400);
+          margin-right: 10px;
         }
+      }
 
-        .footer__form-btn {
-          padding: 0 25px;
-          height: 70px;
-          @include font(24px, 24px, #FFFFFF, 400);
-          background: #C4C4C4;
-          border: none;
-          cursor: pointer;
+      .footer__form-input {
+        display: block;
+        width: 511px;
+        height: 70px;
+        padding: 0 15px;
+        border: none;
+
+        &::placeholder {
+          font-family: $mainFont;
+          @include font(18px, 24px, #888888, 400);
         }
+      }
+
+      .footer__form-btn {
+        padding: 0 25px;
+        height: 70px;
+        @include font(24px, 24px, #FFFFFF, 400);
+        background: #C4C4C4;
+        border: none;
+        cursor: pointer;
       }
     }
   }
+}
 
-  .footer__logo {
-    background-color: #ffffff;
-    text-align: center;
-    padding: 3px 10px 23px;
-    .footer__logo-img {
-      max-width: 300px;
-    }
+.footer__logo {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 3px 10px 23px;
+
+  .footer__logo-img {
+    max-width: 300px;
   }
+}
