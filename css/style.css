@@ -197,10 +197,11 @@ body {
   line-height: 24px;
   color: #FFFFFF;
   font-weight: 400;
-  background: #C4C4C4;
+  background-color: #C4C4C4;
   border: none;
   cursor: pointer;
   position: relative;
+  transition: all .3s;
 }
 @media (max-width: 440px) {
   .search .search__inner .search__form-btn {
@@ -208,6 +209,9 @@ body {
     height: auto;
     padding: 12px;
   }
+}
+.search .search__inner .search__form-btn:hover {
+  background-color: #4c4a4a;
 }
 .search .search__inner .search__form-btn:before {
   content: '';
@@ -273,23 +277,33 @@ body {
     width: 100%;
   }
 }
-.popular .container .popular__inner .popular__item .popular__img {
+.popular .container .popular__inner .popular__item .popular__img-block {
+  margin: auto;
+  overflow: hidden;
   width: 280px;
   height: 280px;
   object-fit: cover;
   border-radius: 50%;
 }
 @media (max-width: 1200px) {
-  .popular .container .popular__inner .popular__item .popular__img {
+  .popular .container .popular__inner .popular__item .popular__img-block {
     width: 400px;
     height: 400px;
   }
 }
 @media (max-width: 992px) {
-  .popular .container .popular__inner .popular__item .popular__img {
+  .popular .container .popular__inner .popular__item .popular__img-block {
     width: 280px;
     height: 280px;
   }
+}
+.popular .container .popular__inner .popular__item .popular__img-block .popular__img {
+  width: 100%;
+  height: 100%;
+  transition: 1s ease-in;
+}
+.popular .container .popular__inner .popular__item .popular__img-block .popular__img:hover {
+  transform: scale(1.1, 1.1);
 }
 .popular .container .popular__inner .popular__item .popular__item-title {
   padding: 30px 15px;
@@ -303,6 +317,10 @@ body {
   text-decoration: none;
   padding: 13px 48px;
   color: #fff;
+  transition: all .3s;
+}
+.popular .container .popular__inner .popular__item .popular__link:hover {
+  background-color: #4c4a4a;
 }
 
 .reason .container {
@@ -392,6 +410,10 @@ body {
   color: #888888;
   padding-left: 36px;
   position: relative;
+  transition: all .3s;
+}
+.reason .container .reason__inner .reason__item .reason__link:hover {
+  color: #4c4a4a;
 }
 .reason .container .reason__inner .reason__item .reason__link::before {
   content: '';
@@ -548,10 +570,68 @@ body {
     grid-auto-rows: 180px;
   }
 }
-.trends .container .trends__inner .trends__img {
+.trends .container .trends__inner .trends__item {
+  width: 100%;
+  position: relative;
+}
+.trends .container .trends__inner .trends__item .trends__img {
+  opacity: 1;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: .5s ease;
+}
+.trends .container .trends__inner .trends__item .trends__overlay {
+  opacity: 0;
+}
+.trends .container .trends__inner .trends__item .trends__overlay .trends__content {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  text-align: center;
+  font-family: "PT Serif", serif;
+  font-size: 38px;
+  line-height: 42px;
+  color: #4c4a4a;
+  font-weight: 400;
+}
+@media (max-width: 850px) {
+  .trends .container .trends__inner .trends__item .trends__overlay .trends__content {
+    font-size: 28px;
+    line-height: 32px;
+    color: #4c4a4a;
+    font-weight: 400;
+  }
+}
+.trends .container .trends__inner .trends__item .trends__overlay .trends__content .trends__link {
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  color: #4c4a4a;
+  font-weight: 400;
+  background-color: #ffffff;
+  padding: 8px 4px;
+  margin-top: 10px;
+}
+@media (max-width: 850px) {
+  .trends .container .trends__inner .trends__item .trends__overlay .trends__content .trends__link {
+    font-size: 18px;
+    line-height: 22px;
+    color: #4c4a4a;
+    font-weight: 400;
+  }
+}
+.trends .container .trends__inner .trends__item:hover .trends__img {
+  opacity: 0.5;
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+}
+.trends .container .trends__inner .trends__item:hover .trends__overlay {
+  opacity: 1;
 }
 .trends .container .trends__inner .trends__title {
   background-color: #ffffff;
@@ -561,14 +641,22 @@ body {
   font-family: "PT Serif", serif;
   font-size: 48px;
   line-height: 48px;
-  color: #4c4a4a;
+  color: #000000;
   font-weight: 400;
 }
 @media (max-width: 1080px) {
   .trends .container .trends__inner .trends__title {
     font-size: 36px;
     line-height: 36px;
-    color: #4c4a4a;
+    color: #000000;
+    font-weight: 400;
+  }
+}
+@media (max-width: 850px) {
+  .trends .container .trends__inner .trends__title {
+    font-size: 32px;
+    line-height: 36px;
+    color: #000000;
     font-weight: 400;
   }
 }
@@ -669,6 +757,10 @@ body {
   color: #000000;
   font-weight: 400;
   cursor: pointer;
+  transition: all .3s;
+}
+.about .container .about__inner .staff .staff__items .staff__item .staff__btn:hover {
+  background-color: #C4C4C4;
 }
 .about .container .about__inner .blog {
   width: 412px;
@@ -714,11 +806,15 @@ body {
   padding-left: 67px;
   margin-bottom: 28px;
   position: relative;
+  transition: all .3s;
 }
 @media (max-width: 450px) {
   .about .container .about__inner .blog .blog__list .blog__item .blog__link {
     padding-left: 40px;
   }
+}
+.about .container .about__inner .blog .blog__list .blog__item .blog__link:hover {
+  color: #C4C4C4;
 }
 .about .container .about__inner .blog .blog__list .blog__item .blog__link::before {
   content: '';
@@ -782,6 +878,10 @@ body {
   color: #000000;
   font-weight: 400;
   cursor: pointer;
+  transition: all .3s;
+}
+.about .container .about__inner .reviews .reviews__link:hover {
+  background-color: #C4C4C4;
 }
 
 .footer {
@@ -822,6 +922,10 @@ body {
   line-height: 36px;
   color: #FFFFFF;
   font-weight: 400;
+  transition: all .3s;
+}
+.footer .container .footer__top .footer__nav .footer__menu .footer__menu-link:hover {
+  color: #C4C4C4;
 }
 .footer .container .footer__top .footer__nav .footer__social {
   list-style: none;
@@ -843,6 +947,10 @@ body {
   color: #FFFFFF;
   font-weight: 400;
   position: relative;
+  transition: all .3s;
+}
+.footer .container .footer__top .footer__nav .footer__social .footer__social-link:hover {
+  color: #C4C4C4;
 }
 .footer .container .footer__top .footer__nav .footer__social .footer__social-link::before {
   content: '';
@@ -929,6 +1037,7 @@ body {
   background: #C4C4C4;
   border: none;
   cursor: pointer;
+  transition: all .3s;
 }
 @media (max-width: 550px) {
   .footer .container .footer__top .footer__form-btn {
@@ -936,6 +1045,9 @@ body {
     height: auto;
     padding: 12px;
   }
+}
+.footer .container .footer__top .footer__form-btn:hover {
+  background-color: #4c4a4a;
 }
 
 .footer__logo {
