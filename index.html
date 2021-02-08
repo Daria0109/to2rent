@@ -1,381 +1,514 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>To2Rent</title>
-  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Roboto+Condensed&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/normalize.css">
-  <link rel="stylesheet" href="./css/slick.css">
-  <link rel="stylesheet" href="./css/style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-</head>
-<body>
-
-<!--H E A D E R-->
-<header class="header">
-  <!-- logo -->
-  <div class="logo header__logo">
-    <a class="logo__link" href="#">
-      <img class="logo__link-img" src="./assets/logo.svg" alt="Logo To2Rent">
-    </a>
-  </div>
-  <!-- menu -->
-  <nav class="menu">
-    <ul class="menu__list">
-      <li class="menu__list-item">
-        <a class="menu__list-link menu__list-link--active" href="#">About us</a>
-      </li>
-      <li class="menu__list-item">
-        <a class="menu__list-link" href="#">Houses</a>
-      </li>
-      <li class="menu__list-item">
-        <a class="menu__list-link" href="#">Apartments</a>
-      </li>
-      <li class="menu__list-item">
-        <a class="menu__list-link" href="#">Contacts</a>
-      </li>
-    </ul>
-  </nav>
-</header>
-
-<!-- S L I D E R -->
-<section class="slider">
-  <div class="slider__item" style="background-image: url(assets/slider-item1.jpg)"></div>
-  <div class="slider__item" style="background-image: url(assets/slider-item2.jpg)"></div>
-  <div class="slider__item" style="background-image: url(assets/slider-item3.jpg)"></div>
-</section>
-
-<!-- S E A R C H -->
-<section class="search">
-  <div class="search__inner">
-    <form class="search__form">
-      <label class="search__form-label">Search for Apartments</label>
-      <input class="search__form-input" type="text" placeholder="Enter a city">
-      <button class="search__form-btn" type="submit">Search</button>
-    </form>
-  </div>
-</section>
-
-<!--P O P U L A R -->
-<section class="popular">
-  <h3 class="popular__title">Most popular variants</h3>
-  <div class="container">
-    <div class="popular__inner">
-
-      <div class="popular__item">
-        <div class="popular__img-block">
-          <img class="popular__img" src="./assets/popular/popular-item1.jpg" alt="Apartments Moscow">
-        </div>
-        <h5 class="popular__item-title">Apartments<br>Moscow</h5>
-        <a class="popular__link" href="#">Details</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To2Rent</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!--H E A D E R-->
+    <header class="header">
+      <!-- logo -->
+      <div class="logo header__logo">
+        <a class="logo__link" href="#">
+          <img
+            class="logo__link-img"
+            src="./assets/logo.svg"
+            alt="Logo To2Rent"
+          />
+        </a>
       </div>
-
-      <div class="popular__item">
-        <div class="popular__img-block">
-          <img class="popular__img" src="./assets/popular/popular-item2.jpg" alt="Apartments Kiev">
-        </div>
-        <h5 class="popular__item-title">Apartments<br>Kiev</h5>
-        <a class="popular__link" href="#">Details</a>
-      </div>
-
-      <div class="popular__item">
-        <div class="popular__img-block">
-          <img class="popular__img" src="./assets/popular/popular-item3.jpg" alt="Cottage Modern Los Angeles">
-        </div>
-        <h5 class="popular__item-title">Cottage Modern<br>Los Angeles</h5>
-        <a class="popular__link" href="#">Details</a>
-      </div>
-
-      <div class="popular__item">
-        <div class="popular__img-block">
-          <img class="popular__img" src="./assets/popular/popular-item4.jpg" alt="Cottage Family London">
-        </div>
-        <h5 class="popular__item-title">Cottage Family<br>London</h5>
-        <a class="popular__link" href="#">Details</a>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- R E A S O N  -->
-<section class="reason">
-  <div class="container">
-    <div class="reason__inner">
-      <div class="reason__item">
-        <h4 class="reason__title reason__title--icon-1">We save your time and your money</h4>
-        <p class="reason__text">
-          You can easily choose the best property for rent on our website at a reasonable price.
-          Our managers will be happy to help you and answer all your questions.
-        </p>
-        <a class="reason__link" href="#">Read more</a>
-      </div>
-
-      <div class="reason__item">
-        <h4 class="reason__title reason__title--icon-2">Rent the best real estate in major cities</h4>
-        <p class="reason__text">
-          Our luxury real estate database includes more than
-          5,000 options in major cities around the world.
-          We will help you choose the best one, as well as provide additional service
-        </p>
-        <a class="reason__link" href="#">Read more</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- B E S T -->
-<section class="best" style="background-image: url(./assets/best/best-house.jpg)">
-  <div class="container">
-    <h3 class="best__title">
-      Cottage Modern <br>
-      Los Angeles
-    </h3>
-    <a class="best__link" href="">Book house</a>
-  </div>
-</section>
-
-<!-- S T A T I S T I C S -->
-<section class="statistics">
-  <div class="container">
-    <div class="statistics__inner">
-
-      <div class="statistics__item">
-        <img class="statistics__img" src="./assets/statistics/house.svg" alt="current-projects">
-        <div class="statistics__text">
-          <span class="statistics__count">21</span>
-          <p class="statistics__name">current projects</p>
-        </div>
-      </div>
-
-      <div class="statistics__item">
-        <img class="statistics__img" src="./assets/statistics/medal.svg" alt="awards">
-        <div class="statistics__text">
-          <span class="statistics__count">17</span>
-          <p class="statistics__name">awards won</p>
-        </div>
-      </div>
-
-      <div class="statistics__item">
-        <img class="statistics__img" src="./assets/statistics/value.svg" alt="clients">
-        <div class="statistics__text">
-          <div class="statistics__count">2356</div>
-          <p class="statistics__name">happy clients</p>
-        </div>
-
-      </div>
-      <div class="statistics__item">
-        <img class="statistics__img" src="./assets/statistics/home.svg" alt="completed-projects">
-        <div class="statistics__text">
-          <div class="statistics__count">315</div>
-          <p class="statistics__name">completed projects</p>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- T R E N D S -->
-<section class="trends">
-  <div class="container">
-    <div class="trends__inner">
-
-      <div class="trends__item">
-        <img class="trends__img" src="./assets/trends/trends-item1.jpg" alt="Modern">
-        <div class="trends__overlay">
-          <div class="trends__content">Modern
-            <a class="trends__link" href="#">Read more</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="trends__item">
-        <img class="trends__img" src="./assets/trends/trends-item2.jpg" alt="Contemporary">
-        <div class="trends__overlay">
-          <div class="trends__content">Contemporary
-            <a class="trends__link" href="#">Read more</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="trends__item">
-        <img class="trends__img" src="./assets/trends/trends-item3.jpg" alt="Transitional">
-        <div class="trends__overlay">
-          <div class="trends__content">Transitional
-            <a class="trends__link" href="#">Read more</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="trends__item">
-        <img class="trends__img" src="./assets/trends/trends-item4.jpg" alt="Minimalist">
-        <div class="trends__overlay">
-          <div class="trends__content">Minimalist
-            <a class="trends__link" href="#">Read more</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="trends__item trends__title">
-        Design trends
-      </div>
-
-      <div class="trends__item">
-        <img class="trends__img" src="./assets/trends/trends-item5.jpg" alt="Industrial">
-        <div class="trends__overlay">
-          <div class="trends__content">Industrial
-            <a class="trends__link" href="#">Read more</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="trends__item">
-        <img class="trends__img" src="./assets/trends/trends-item6.jpg" alt="Scandinavian">
-        <div class="trends__overlay">
-          <div class="trends__content">Scandinavian
-            <a class="trends__link" href="#">Read more</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="trends__item">
-        <img class="trends__img" src="./assets/trends/trends-item7.jpg" alt="Rustic">
-        <div class="trends__overlay">
-          <div class="trends__content">Rustic
-            <a class="trends__link" href="#">Read more</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="trends__item">
-        <img class="trends__img" src="./assets/trends/trends-item8.jpg" alt="French">
-        <div class="trends__overlay">
-          <div class="trends__content">French
-            <a class="trends__link" href="#">Read more</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- A B O U T -->
-<section class="about">
-  <div class="container">
-    <div class="about__inner">
-      <!--Staff-->
-      <div class="staff">
-        <h4 class="staff__title about__title">Our managers</h4>
-        <div class="staff__items">
-          <div class="staff__item">
-            <img class="staff__avatar" src="./assets/about/staff-item1.jpg" alt="Manager Max">
-            <ul class="staff__info">
-              <li class="staff__info-name">Max</li>
-              <li class="staff__info-age">30 years old</li>
-              <li class="staff__info-city">Moscow</li>
-            </ul>
-            <button class="staff__btn">Contact</button>
-          </div>
-
-          <div class="staff__item">
-            <img class="staff__avatar" src="./assets/about/staff-item2.jpg" alt="Manager Ann">
-            <ul class="staff__info">
-              <li class="staff__info-name">Ann</li>
-              <li class="staff__info-age">28 years old</li>
-              <li class="staff__info-city">Kiev</li>
-            </ul>
-            <button class="staff__btn">Contact</button>
-          </div>
-        </div>
-      </div>
-      <!--Blog-->
-      <div class="blog">
-        <h4 class="about__title">Blog</h4>
-        <ul class="blog__list">
-          <li class="blog__item">
-            <a class="blog__link" href="#">Security and video surveillance systems</a></li>
-          <li class="blog__item">
-            <a class="blog__link" href="#">Club real estate is always in price</a></li>
-          <li class="blog__item">
-            <a class="blog__link" href="#">All the advantages of daily rent of apartments</a></li>
-          <li class="blog__item">
-            <a class="blog__link" href="#">How to choose your dream home in Kiev?</a></li>
-          <li class="blog__item">
-            <a class="blog__link" href="#">Top 10 VIP cottages in Los Angeles</a></li>
-          <li class="blog__item">
-            <a class="blog__link" href="#">Best apartments with panoramic views</a></li>
-          <li class="blog__item">
-            <a class="blog__link" href="#">Homes for rent for a year in Miami</a></li>
-        </ul>
-      </div>
-      <!--Reviews-->
-      <div class="reviews">
-        <h4 class="about__title">Reviews</h4>
-        <img class="reviews__img" src="./assets/about/reviews-item.jpg" alt="Reviews">
-        <p class="reviews__text">
-          This is the best selection service
-          apartments. I have been using 'To2Rent' services for 5 years.
-          Always perfect and exactly what I need.</p>
-        <a class="reviews__link" href="#">Read more</a>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- F O O T E R -->
-<footer class="footer">
-  <div class="container">
-    <div class="footer__top">
-      <!--Footer-top-->
-      <div class="footer__nav">
-        <ul class="footer__menu">
-          <li class="footer__menu-item">
-            <a class="footer__menu-link" href="#">About us</a>
+      <!-- menu -->
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__list-item">
+            <a class="menu__list-link menu__list-link--active" href="#"
+              >About us</a
+            >
           </li>
-          <li class="footer__menu-item">
-            <a class="footer__menu-link" href="#">Houses</a>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">Houses</a>
           </li>
-          <li class="footer__menu-item">
-            <a class="footer__menu-link" href="#">Apartments</a>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">Apartments</a>
           </li>
-          <li class="footer__menu-item">
-            <a class="footer__menu-link" href="#">Reviews</a>
-          </li>
-          <li class="footer__menu-item">
-            <a class="footer__menu-link" href="#">Contacts</a>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">Contacts</a>
           </li>
         </ul>
-        <ul class="footer__social">
-          <li class="footer__social-item">
-            <a class="footer__social-link facebook" href="#">Facebook</a>
-          </li>
-          <li class="footer__social-item">
-            <a class="footer__social-link instagram" href="#">Instagram</a>
-          </li>
-          <li class="footer__social-item">
-            <a class="footer__social-link twitter" href="#">Twitter</a>
-          </li>
-        </ul>
-        <form class="footer__form">
-          <label class="footer__form-label">Contact us</label>
-          <input class="footer__form-input" type="text" placeholder="Ask question">
-          <button class="footer__form-btn" type="submit">Send</button>
+      </nav>
+    </header>
+
+    <!-- S L I D E R -->
+    <section class="slider">
+      <div
+        class="slider__item"
+        style="background-image: url(assets/slider-item1.jpg)"
+      ></div>
+      <div
+        class="slider__item"
+        style="background-image: url(assets/slider-item2.jpg)"
+      ></div>
+      <div
+        class="slider__item"
+        style="background-image: url(assets/slider-item3.jpg)"
+      ></div>
+    </section>
+
+    <!-- S E A R C H -->
+    <section class="search">
+      <div class="search__inner">
+        <form class="search__form">
+          <label class="search__form-label">Search for Apartments</label>
+          <input
+            class="search__form-input"
+            type="text"
+            placeholder="Enter a city"
+          />
+          <button class="search__form-btn" type="submit">Search</button>
         </form>
       </div>
-    </div>
-  </div>
-  <!--Footer-bottom-->
-  <div class="logo footer__logo">
-    <a class="logo__link" href="#">
-      <img class="logo__link-img footer__logo-img" src="./assets/logo.svg" alt="Logo To2Rent">
-    </a>
-  </div>
-</footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="./js/slick.min.js"></script>
-<script src="./js/main.js"></script>
-</body>
+    </section>
+
+    <!--P O P U L A R -->
+    <section class="popular">
+      <h3 class="popular__title">Most popular variants</h3>
+      <div class="container">
+        <div class="popular__inner">
+          <div class="popular__item">
+            <div class="popular__img-block">
+              <img
+                class="popular__img"
+                src="./assets/popular/popular-item1.jpg"
+                alt="Apartments Moscow"
+              />
+            </div>
+            <h5 class="popular__item-title">Apartments<br />Moscow</h5>
+            <a class="popular__link" href="#">Details</a>
+          </div>
+
+          <div class="popular__item">
+            <div class="popular__img-block">
+              <img
+                class="popular__img"
+                src="./assets/popular/popular-item2.jpg"
+                alt="Apartments Kiev"
+              />
+            </div>
+            <h5 class="popular__item-title">Apartments<br />Kiev</h5>
+            <a class="popular__link" href="#">Details</a>
+          </div>
+
+          <div class="popular__item">
+            <div class="popular__img-block">
+              <img
+                class="popular__img"
+                src="./assets/popular/popular-item3.jpg"
+                alt="Cottage Modern Los Angeles"
+              />
+            </div>
+            <h5 class="popular__item-title">Cottage Modern<br />Los Angeles</h5>
+            <a class="popular__link" href="#">Details</a>
+          </div>
+
+          <div class="popular__item">
+            <div class="popular__img-block">
+              <img
+                class="popular__img"
+                src="./assets/popular/popular-item4.jpg"
+                alt="Cottage Family London"
+              />
+            </div>
+            <h5 class="popular__item-title">Cottage Family<br />London</h5>
+            <a class="popular__link" href="#">Details</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- R E A S O N  -->
+    <section class="reason">
+      <div class="container">
+        <div class="reason__inner">
+          <div class="reason__item">
+            <h4 class="reason__title reason__title--icon-1">
+              We save your time and your money
+            </h4>
+            <p class="reason__text">
+              You can easily choose the best property for rent on our website at
+              a reasonable price. Our managers will be happy to help you and
+              answer all your questions.
+            </p>
+            <a class="reason__link" href="#">Read more</a>
+          </div>
+
+          <div class="reason__item">
+            <h4 class="reason__title reason__title--icon-2">
+              Rent the best real estate in major cities
+            </h4>
+            <p class="reason__text">
+              Our luxury real estate database includes more than 5,000 options
+              in major cities around the world. We will help you choose the best
+              one, as well as provide additional service
+            </p>
+            <a class="reason__link" href="#">Read more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- B E S T -->
+    <section
+      class="best"
+      style="background-image: url(./assets/best/best-house.jpg)"
+    >
+      <div class="container">
+        <h3 class="best__title">
+          Cottage Modern <br />
+          Los Angeles
+        </h3>
+        <a class="best__link" href="">Book house</a>
+      </div>
+    </section>
+
+    <!-- S T A T I S T I C S -->
+    <section class="statistics">
+      <div class="container">
+        <div class="statistics__inner">
+          <div class="statistics__item">
+            <img
+              class="statistics__img"
+              src="./assets/statistics/house.svg"
+              alt="current-projects"
+            />
+            <div class="statistics__text">
+              <span class="statistics__count">21</span>
+              <p class="statistics__name">current projects</p>
+            </div>
+          </div>
+
+          <div class="statistics__item">
+            <img
+              class="statistics__img"
+              src="./assets/statistics/medal.svg"
+              alt="awards"
+            />
+            <div class="statistics__text">
+              <span class="statistics__count">17</span>
+              <p class="statistics__name">awards won</p>
+            </div>
+          </div>
+
+          <div class="statistics__item">
+            <img
+              class="statistics__img"
+              src="./assets/statistics/value.svg"
+              alt="clients"
+            />
+            <div class="statistics__text">
+              <div class="statistics__count">2356</div>
+              <p class="statistics__name">happy clients</p>
+            </div>
+          </div>
+          <div class="statistics__item">
+            <img
+              class="statistics__img"
+              src="./assets/statistics/home.svg"
+              alt="completed-projects"
+            />
+            <div class="statistics__text">
+              <div class="statistics__count">315</div>
+              <p class="statistics__name">completed projects</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- T R E N D S -->
+    <section class="trends">
+      <div class="container">
+        <div class="trends__inner">
+          <div class="trends__item">
+            <img
+              class="trends__img"
+              src="./assets/trends/trends-item1.jpg"
+              alt="Modern"
+            />
+            <div class="trends__overlay">
+              <div class="trends__content">
+                Modern
+                <a class="trends__link" href="#">Read more</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="trends__item">
+            <img
+              class="trends__img"
+              src="./assets/trends/trends-item2.jpg"
+              alt="Contemporary"
+            />
+            <div class="trends__overlay">
+              <div class="trends__content">
+                Contemporary
+                <a class="trends__link" href="#">Read more</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="trends__item">
+            <img
+              class="trends__img"
+              src="./assets/trends/trends-item3.jpg"
+              alt="Transitional"
+            />
+            <div class="trends__overlay">
+              <div class="trends__content">
+                Transitional
+                <a class="trends__link" href="#">Read more</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="trends__item">
+            <img
+              class="trends__img"
+              src="./assets/trends/trends-item4.jpg"
+              alt="Minimalist"
+            />
+            <div class="trends__overlay">
+              <div class="trends__content">
+                Minimalist
+                <a class="trends__link" href="#">Read more</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="trends__item trends__title">Design trends</div>
+
+          <div class="trends__item">
+            <img
+              class="trends__img"
+              src="./assets/trends/trends-item5.jpg"
+              alt="Industrial"
+            />
+            <div class="trends__overlay">
+              <div class="trends__content">
+                Industrial
+                <a class="trends__link" href="#">Read more</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="trends__item">
+            <img
+              class="trends__img"
+              src="./assets/trends/trends-item6.jpg"
+              alt="Scandinavian"
+            />
+            <div class="trends__overlay">
+              <div class="trends__content">
+                Scandinavian
+                <a class="trends__link" href="#">Read more</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="trends__item">
+            <img
+              class="trends__img"
+              src="./assets/trends/trends-item7.jpg"
+              alt="Rustic"
+            />
+            <div class="trends__overlay">
+              <div class="trends__content">
+                Rustic
+                <a class="trends__link" href="#">Read more</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="trends__item">
+            <img
+              class="trends__img"
+              src="./assets/trends/trends-item8.jpg"
+              alt="French"
+            />
+            <div class="trends__overlay">
+              <div class="trends__content">
+                French
+                <a class="trends__link" href="#">Read more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- A B O U T -->
+    <section class="about">
+      <div class="container">
+        <div class="about__inner">
+          <!--Staff-->
+          <div class="staff">
+            <h4 class="staff__title about__title">Our managers</h4>
+            <div class="staff__items">
+              <div class="staff__item">
+                <img
+                  class="staff__avatar"
+                  src="./assets/about/staff-item1.jpg"
+                  alt="Manager Max"
+                />
+                <ul class="staff__info">
+                  <li class="staff__info-name">Max</li>
+                  <li class="staff__info-age">30 years old</li>
+                  <li class="staff__info-city">Moscow</li>
+                </ul>
+                <button class="staff__btn">Contact</button>
+              </div>
+
+              <div class="staff__item">
+                <img
+                  class="staff__avatar"
+                  src="./assets/about/staff-item2.jpg"
+                  alt="Manager Ann"
+                />
+                <ul class="staff__info">
+                  <li class="staff__info-name">Ann</li>
+                  <li class="staff__info-age">28 years old</li>
+                  <li class="staff__info-city">Kiev</li>
+                </ul>
+                <button class="staff__btn">Contact</button>
+              </div>
+            </div>
+          </div>
+          <!--Blog-->
+          <div class="blog">
+            <h4 class="about__title">Blog</h4>
+            <ul class="blog__list">
+              <li class="blog__item">
+                <a class="blog__link" href="#"
+                  >Security and video surveillance systems</a
+                >
+              </li>
+              <li class="blog__item">
+                <a class="blog__link" href="#"
+                  >Club real estate is always in price</a
+                >
+              </li>
+              <li class="blog__item">
+                <a class="blog__link" href="#"
+                  >All the advantages of daily rent of apartments</a
+                >
+              </li>
+              <li class="blog__item">
+                <a class="blog__link" href="#"
+                  >How to choose your dream home in Kiev?</a
+                >
+              </li>
+              <li class="blog__item">
+                <a class="blog__link" href="#"
+                  >Top 10 VIP cottages in Los Angeles</a
+                >
+              </li>
+              <li class="blog__item">
+                <a class="blog__link" href="#"
+                  >Best apartments with panoramic views</a
+                >
+              </li>
+              <li class="blog__item">
+                <a class="blog__link" href="#"
+                  >Homes for rent for a year in Miami</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!--Reviews-->
+          <div class="reviews">
+            <h4 class="about__title">Reviews</h4>
+            <img
+              class="reviews__img"
+              src="./assets/about/reviews-item.jpg"
+              alt="Reviews"
+            />
+            <p class="reviews__text">
+              This is the best selection service apartments. I have been using
+              'To2Rent' services for 5 years. Always perfect and exactly what I
+              need.
+            </p>
+            <a class="reviews__link" href="#">Read more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- F O O T E R -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <!--Footer-top-->
+          <div class="footer__nav">
+            <ul class="footer__menu">
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#">About us</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#">Houses</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#">Apartments</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#">Reviews</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#">Contacts</a>
+              </li>
+            </ul>
+            <ul class="footer__social">
+              <li class="footer__social-item">
+                <a class="footer__social-link facebook" href="#">Facebook</a>
+              </li>
+              <li class="footer__social-item">
+                <a class="footer__social-link instagram" href="#">Instagram</a>
+              </li>
+              <li class="footer__social-item">
+                <a class="footer__social-link twitter" href="#">Twitter</a>
+              </li>
+            </ul>
+            <form class="footer__form">
+              <label class="footer__form-label">Contact us</label>
+              <input
+                class="footer__form-input"
+                type="text"
+                placeholder="Ask question"
+              />
+              <button class="footer__form-btn" type="submit">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!--Footer-bottom-->
+      <div class="logo footer__logo">
+        <a class="logo__link" href="#">
+          <img
+            class="logo__link-img footer__logo-img"
+            src="./assets/logo.svg"
+            alt="Logo To2Rent"
+          />
+        </a>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
 </html>

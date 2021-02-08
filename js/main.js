@@ -12,5 +12,4 @@ $(function (){
   })
 });
 
-
-
+new WOW().init();
